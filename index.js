@@ -20,6 +20,6 @@ app.all("*", (req, res) => {
   return res.status(404).json({ status: "fail", message: "url not fount " });
 });
 // server run
-app.listen(process.env.PORT, () => {
+app.listen(5000 || process.env.PORT, () => {
   console.log(`server is run on port ${process.env.PORT}`);
 });
